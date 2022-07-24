@@ -1,0 +1,145 @@
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.container-create {
+  display: flex;
+  width: 100%;
+}
+
+.container-create .side-left {
+  padding-left: 180px;
+  width: 50%;
+}
+
+.container-create .side-left .field-title {
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 35px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.container-create .side-left .textarea-story {
+  border-radius: 4px;
+  height: 500px;
+  padding: 15px;
+  width: 97%;
+}
+
+.container-create .side-right {
+  margin-left: 40px;
+  margin-right: 180px;
+  width: 50%;
+}
+
+.container-create .side-right .textarea-desc {
+  border-radius: 4px;
+  height: 95px;
+  margin-top: -6px;
+  padding: 10px;
+  width: 300px;
+
+}
+
+.container-create .side-right .field-thumbnail {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: -10px;
+  width: 305px;
+}
+
+.container-create .side-right .container-select {
+  display: flex;
+  position: relative;
+  width: 322px;
+}
+
+.container-create .side-right .container-select select {
+  border-radius: 4px;
+  margin-top: -10px;
+  padding: 12px;
+  width: 322px;
+
+}
+
+.container-create .side-right .container-select .icon-arrow-up {
+  position: absolute;
+  right: 5px;
+  top: -3px;
+}
+
+.container-create .side-right .container-select .icon-arrow-down {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+}
+
+.container-create .side-right .container-switch {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 322px;
+}
+
+.container-create .side-right .btn-publish {
+  text-transform: capitalize
+}
+
+@media only screen and (max-width: 700px) {
+  .container-create {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container-create .side-left {
+    padding-left: 10px;
+    width: 90%;
+  }
+
+  .container-create .side-right {
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .container-create .side-right .textarea-desc {
+    width: 90%;
+  }
+
+  .container-create .side-right .field-thumbnail {
+    width: 91%;
+  }
+
+  .container-create .side-right .container-select {
+    width: 95%;
+  }
+
+  .container-create .side-right .container-select select {
+    width: 100%;
+  }
+
+  .container-create .side-right .btn-publish {
+    margin-bottom: 50px;
+    width: 96%;
+  }
+
+  .container-create .side-right .container-switch {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: auto;
+    margin-right: 12px;
+  }
+
+}

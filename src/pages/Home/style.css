@@ -1,0 +1,34 @@
+.wrapp-img-woman {
+  background-image: url(../../assets/images/woman.png);
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-position: center;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-left: 30px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 40px;
+  }
+}

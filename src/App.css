@@ -1,3 +1,74 @@
+.wrapper-success-register {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 10px;
+  justify-content: space-evenly;
+  color: green;
+}
+
+.wrapper-failed-register {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 10px;
+  justify-content: space-evenly;
+  color: #ED3237;
+}
+
+.wrapp-create-account {
+  color: #ED3237;
+}
+
+.wrapp-create-account:hover {
+  cursor: pointer;
+}
+
+.wrapp-title-login {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.container-fields .validation-error {
+  color: #DE1B1B;
+  font-size: 12px;
+}
+
+.container-fields .wrapp-field-pass {
+  position: relative;
+}
+
+.container-fields .wrapp-field-pass .icon-button {
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+.container-fields .field {
+  border: 1px solid #ECEFF1;
+  border-radius: 4px;
+  height: 44px;
+  margin-top: -10px;
+  padding: 0px 0px 0px 15px;
+  width: 100%;
+}
+
+.container-fields .wrapp-field-pass .field-pass {
+  border: 1px solid #ECEFF1;
+  border-radius: 4px;
+  height: 44px;
+  margin-top: -10px;
+  padding: 0px 0px 0px 15px;
+  width: 100%;
+}
+
+.login {
+  margin-top: 40px;
+  text-transform: capitalize !important;
+}
+
 .App {
   text-align: center;
 }
@@ -24,15 +95,41 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container-menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  line-height: 45px;
+  padding-left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container-menu .active {
+  color: #ED3237
+}
+
+.container-menu .nonActive {
+  color: #000
+}
+
+.container-menu .btn-login {
+  text-transform: none;
+}
+
+@media only screen and (min-width: 701px) {
+  .container-menu {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapp-title-login {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .button-login {
+    width: 107%;
   }
 }

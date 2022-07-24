@@ -1,0 +1,76 @@
+.container-topNav {
+  align-items: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-topNav .menu-icon {
+  display: none;
+}
+
+.container-topNav .btn-login {
+  margin-right: 80px;
+  text-transform: none;
+}
+
+.container-topNav .list-menu .active {
+  color: #ED3237
+}
+
+.container-topNav .list-menu .nonActive {
+  color: #000
+}
+
+.container-topNav .list-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.container-topNav .list-menu:hover {
+  cursor: pointer;
+}
+
+.wrapp-logo {
+  display: flex;
+  padding-left: 80px;
+}
+
+.wrapp-logo .logo-sahaware {
+  background-image: url(../../../assets/icons/sahaware.svg);
+  background-repeat: no-repeat;
+  height: 25px;
+  margin-top: 12px;
+  width: 260px;
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapp-logo .logo-sahaware {
+    background-image: url(../../../assets/icons/sahaware.svg);
+    background-repeat: no-repeat;
+    height: 25px;
+    margin-top: 0px;
+    width: 260px;
+  }
+
+  .container-topNav .list-menu {
+    display: none;
+  }
+
+  .wrapp-logo {
+    padding-left: 20px;
+  }
+
+  .container-topNav .btn-login {
+    display: none;
+  }
+
+  .container-topNav .menu-icon {
+    display: block;
+    margin-right: 20px;
+  }
+}
